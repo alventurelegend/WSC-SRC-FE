@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#00d9ff, #008299);
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.logo .title {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo h4 {
+  color: #319bff;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.logo h3 {
+  color: #002f94;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.btn1 {
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  border: 1.5px solid #4895ef;
+  background-color: #4895ef;
+  color: white;
+  width: 6.25rem;
+  margin-right: -3rem;
+  z-index: 2;
+  transition: border 0.3s, background-color 0.3s ease-in;
+}
+
+.btn1:hover {
+  background-color: #007fc4;
+  border: 1.5px solid #007fc4;
+}
+
+.btn1:active {
+  background-color: #002f94;
+  border: 1.5px solid #002f94;
+}
+
+.btn2 {
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  border: 1.5px solid rgb(88, 88, 88);
+  background-color: #ffffff;
+  color: rgb(88, 88, 88);
+  width: 9.375rem;
+  z-index: 1;
+  padding-left: 50px;
+  transition: color 0.3s, background-color 0.3s ease-in;
+}
+
+.btn2:hover {
+  background-color: #e2e2e2;
+}
+
+.btn2:active {
+  background-color: #747474;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -100px;
+  position: relative;
+  padding: 0 50px;
+}
+
+.name {
+  margin-left: 90px;
+  text-align: left;
+}
+
+.name h1 {
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 900;
+  color: white;
+}
+.name p {
+  width: 90%;
+  color: #ffffff;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.hero img {
+  margin-top: 20rem;
+  margin-right: 60px;
+  max-width: none;
+  height: auto;
+  margin-bottom: -36px;
+}
+
+.batas {
+  margin-top: -172px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 50px;
+  margin-bottom: -85px;
+  margin-left: -20px;
+}
+
+.medal,
+.thropy {
+  color: white;
+  text-align: left;
+}
+
+#td1,
+#td2,
+#td3 {
+  margin-bottom: 30px;
+  margin-right: 40px;
+  font-size: 2em;
+  display: inline-block;
+}
+#td2 {
+  font-size: 3em;
+}
+
+#tr1,
+#tr2,
+#tr3 {
+  font-size: 6em;
+  margin-left: -20px;
+  display: inline-block;
+}
+#tr2 {
+  font-size: 5em;
+}
+#tr3 {
+  font-size: 4em;
+}
+
+.line {
+  width: 100%;
+  background-color: white;
+  color: #007fc4;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 5rem;
+}
+
+.line h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 6.25rem;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  flex-grow: 1;
+  max-width: 280px;
+}
+
+.card i {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-size: 60px;
+  color: #219fff;
+}
+
+.card h4 {
+  margin-bottom: 20px;
+  color: #ffbb00;
+}
+
+.card p {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #6a6a6a;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+  body {
+    padding-top: 70px;
+  }
+
+  header {
+    padding: 15px 30px;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+  .logo h4 {
+    font-size: 1rem;
+  }
+  .logo h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn1 {
+    width: 5.5rem;
+    margin-right: -2.2rem;
+  }
+
+  .btn2 {
+    width: 8rem;
+    padding-left: 35px;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-top: -50px;
+    padding: 0 1.5rem;
+  }
+
+  .name {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .name h1 {
+    font-size: clamp(2.5rem, 7vw, 4rem);
+  }
+
+  .name p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  }
+
+  .hero-img {
+    flex-grow: 0;
+    margin-bottom: 1px;
+  }
+
+  .hero img {
+    margin-top: 5rem;
+    margin-right: 0;
+    max-width: 70%;
+  }
+
+  .batas {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+    margin-bottom: -42px;
+    margin-left: -250px;
+  }
+
+  .medal,
+  .thropy {
+    text-align: center;
+    width: 100%;
+  }
+
+  #td1,
+  #td2,
+  #td3,
+  #tr1,
+  #tr2,
+  #tr3 {
+    font-size: 1.6em;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0.8rem;
+  }
+  #td2 {
+    font-size: 2.2em;
+  }
+  #tr1 {
+    font-size: 4em;
+  }
+  #tr2 {
+    font-size: 3.2em;
+  }
+  #tr3 {
+    font-size: 2.2em;
+  }
+
+  .line {
+    padding: 1.2rem 0;
+    margin-top: 20rem;
+  }
+
+  .line h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-card {
+    justify-content: center;
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 45%;
+    max-width: 350px;
+    margin-top: 3rem;
+  }
+
+  .card i {
+    margin-top: 3rem;
+    font-size: 4rem;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    max-width: 80%;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+  .logo h4 {
+    font-size: 0.8rem;
+  }
+  .logo h3 {
+    font-size: 1rem;
+  }
+
+  .button {
+    flex-direction: row;
+    gap: 0.4rem;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 0.5rem 0.7rem;
+    min-width: unset;
+    width: auto;
+    font-size: 0.75rem;
+    margin-right: 0;
+    padding-left: 0.7rem;
+  }
+
+  .hero {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    min-height: 70vh;
+    max-width: 50vh;
+  }
+
+  .name {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .name h1 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    margin-bottom: 2rem;
+  }
+
+  .name p {
+    width: 100%;
+    font-size: clamp(0.85rem, 3.5vw, 1rem);
+  }
+
+  .hero-img {
+    order: 2;
+  }
+
+  .hero img {
+    width: 80%;
+    max-width: 200px;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: -421px;
+  }
+
+  .batas {
+    margin-top: 2rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+
+  .medal,
+  .thropy {
+    text-align: center;
+  }
+
+  #td1,
+  #td2,
+  #td3,
+  #tr1,
+  #tr2,
+  #tr3 {
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+  }
+  #td2 {
+    font-size: 1.5em;
+  }
+  #tr1 {
+    font-size: 2.5em;
+  }
+  #tr2 {
+    font-size: 2em;
+  }
+  #tr3 {
+    font-size: 1.5em;
+  }
+
+  .line {
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+
+  .line h2 {
+    font-size: 1.1rem;
+  }
+
+  .form-card {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 95%;
+    max-width: 280px;
+    margin-top: 1.5rem;
+  }
+
+  .card i {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+}

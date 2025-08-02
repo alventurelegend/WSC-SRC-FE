@@ -1,0 +1,192 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li,
+figure, figcaption,
+blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none; /* Hapus bullet/nomor default */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*
+ * =====================================
+ * General Styles (untuk halaman Kebijakan Privasi)
+ * =====================================
+ */
+body {
+    font-family: Arial, sans-serif; /* Menggunakan Arial atau font sistem default */
+    font-size: medium;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Latar belakang abu-abu muda */
+    color: #333; /* Warna teks utama */
+    display: flex;
+    justify-content: center; /* Pusatkan konten horizontal */
+    align-items: flex-start; /* Konten dimulai dari atas */
+    min-height: 100vh; /* Pastikan body mengambil tinggi penuh viewport */
+}
+
+.container {
+    max-width: 800px; /* Lebar maksimum konten */
+    width: 100%; /* Agar responsif mengambil 100% dari parent (body padding) */
+    margin:20px auto; /* Margin atas/bawah dan pusatkan horizontal */
+    background: #fff; /* Latar belakang konten putih */
+    padding: 30px; /* Padding di dalam container */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    box-sizing: border-box; /* Penting untuk padding */
+}
+
+h1 {
+    font-size: 2.2em; /* Ukuran judul utama */
+    color: #1a425f; /* Warna judul (disesuaikan dengan tema Anda) */
+    border-bottom: 2px solid #eee; /* Garis bawah tipis */
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: center; /* Pusatkan judul */
+}
+
+h2 {
+    font-size: 1.6em; /* Ukuran sub-judul */
+    color: #007bff; /* Warna biru untuk sub-judul */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px; /* Margin atas untuk memisahkan bagian */
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px; /* Jarak antar paragraf */
+    text-align: justify; /* Teks rata kanan-kiri */
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: disc; /* Bullet point default */
+    margin-left: 25px; /* Indentasi untuk list */
+    margin-bottom: 15px;
+}
+
+ul ul { /* Untuk list bersarang */
+    list-style-type: circle; /* Bullet point lingkaran untuk sub-list */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+li {
+    margin-bottom: 8px; /* Jarak antar item list */
+}
+
+a {
+    color: #007bff; /* Warna tautan biru */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.last-updated {
+    font-size: 0.9em;
+    color: #777;
+    text-align: right;
+    margin-top: 40px; /* Jarak dari konten atas */
+}
+
+/*
+ * =====================================
+ * Responsive Design (Media Queries)
+ * =====================================
+ */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        margin: 15px auto; /* Margin sedikit berkurang */
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        padding-bottom: 8px;
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+
+    p, ul, ol, li {
+        font-size: 0.95em; /* Sedikit perkecil font teks biasa */
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 5px; /* Sudut sedikit lebih kecil */
+    }
+
+    h1 {
+        font-size: 1.8em;
+        padding-bottom: 10px;
+        margin-bottom: 18px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        padding-bottom: 6px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    p, ul, ol, li {
+        font-size: 0.9em; /* Perkecil font untuk ponsel */
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+
+    .last-updated {
+        margin-top: 30px;
+        font-size: 0.85em;
+    }
+}

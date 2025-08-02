@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#00d9ff, #008299);
+  font-family: "roboto", sans-serif;
+ height: 100vh;
+}
+
+.back-button {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.8rem;
+  border: none;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+leaderboard-display {
+  margin-top: 5rem;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #6a6a6a;
+  margin-top: 3rem;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+/* Untuk layar dengan lebar maksimum 600px (misalnya tablet dalam mode portrait) */
+@media (max-width: 600px) {
+  leaderboard-display {
+  max-width: 80%;
+ margin: 0 auto;
+ margin-top: 5rem;
+}
+  .leaderboard-container {
+    padding: 15px; /* Padding sedikit berkurang */
+    max-width: 90%; /* Mengambil lebih banyak lebar di layar kecil */
+  }
+  .leaderboard-title {
+    font-size: 1.3em; /* Ukuran font judul sedikit lebih kecil */
+    padding: 12px 15px;
+    margin: -15px -15px 15px -15px; /* Sesuaikan margin */
+  }
+  .leaderboard-item {
+    padding: 10px; /* Padding item sedikit berkurang */
+    margin-bottom: 8px;
+  }
+  .leaderboard-rank {
+    font-size: 1.1em; /* Ukuran font peringkat sedikit lebih kecil */
+    width: 25px; /* Lebar tetap peringkat sedikit berkurang */
+    margin-right: 10px;
+  }
+  .leaderboard-username {
+    font-size: 0.95em; /* Ukuran font username sedikit lebih kecil */
+  }
+  .leaderboard-gudep {
+    font-size: 0.8em; /* Ukuran font gudep sedikit lebih kecil */
+  }
+  .leaderboard-score {
+    font-size: 1.1em; /* Ukuran font poin sedikit lebih kecil */
+    padding: 6px 12px;
+    min-width: 60px; /* Lebar minimum poin sedikit berkurang */
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Untuk layar dengan lebar maksimum 400px (misalnya ponsel) */
+@media (max-width: 400px) {
+  .leaderboard-container {
+    padding: 10px; /* Padding lebih kecil lagi */
+  }
+  .leaderboard-title {
+    font-size: 1.2em; /* Ukuran font judul lebih kecil */
+  }
+  .leaderboard-item {
+    flex-wrap: wrap; /* Izinkan item untuk "wrap" ke baris berikutnya jika terlalu sempit */
+    gap: 5px; /* Jarak antar elemen dalam item yang wrap */
+    padding: 8px;
+  }
+  .leaderboard-rank {
+    width: auto; /* Biarkan lebar otomatis */
+    margin-right: 8px;
+  }
+  .leaderboard-details {
+    flex-basis: 100%; /* Username dan Gudep mengambil lebar penuh */
+    margin-bottom: 5px; /* Sedikit margin di bawah detail */
+  }
+  .leaderboard-score {
+    flex-basis: 100%; /* Poin mengambil lebar penuh */
+    order: -1; /* Pindahkan poin ke atas dalam urutan flex item */
+    text-align: right; /* Poin rata kanan di bagian atas */
+    padding: 5px 10px;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+}

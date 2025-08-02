@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="../../public/css/login.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/e732216f12.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LOGO TITLE -->
+    <link rel="icon" href="../../public/asset/WcsLogo.png" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-header">
+              <img src="../../public/asset/WcsLogo.png" alt="" width="100px">
+                <h2>Form Registrasi</h2>
+            </div>
+           <form class="login-form">
+              <div class="input-group">
+                <input type="text" name="user" placeholder="Username..." id="user" required>
+              </div>
+              <div class="input-group">
+                <input type="password" name="password" placeholder="Password..." id="password" required>
+              </div>
+              <div class="input-group">
+                <input type="text" name="gudep" placeholder="Gugus Depan..." id="gudep" required>
+              </div>
+              <button type="submit" class="regist-button">Daftar</button>
+            </form>
+            <div class="register-link">
+                Sudah Punya akun? <a href="../page/login.html">Login</a>
+            </div>
+        </div>
+    </div>  
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="../../public/js/register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="../../public/css/login.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e732216f12.js" crossorigin="anonymous"></script>
+    <!-- LOGO TITLE -->
+    <link rel="icon" href="../../public/asset/WcsLogo.png" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-header">
+              <img src="../../public/asset/WcsLogo.png" alt="" width="100px">
+                <h2>Form Login</h2>
+            </div>
+            <form class="login-form">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="loguser" placeholder="Username...." id="username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="passlog" placeholder="Password...." id="password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <div class="register-link">
+                Belum Punya akun? <a href="../page/registrasi.html">Registrasi</a>
+            </div>
+        </div>
+    </div>  
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="../item/header2.js"></script>
+    <script src="../../public/js/login.js"></script>
+  </body>
+</html>

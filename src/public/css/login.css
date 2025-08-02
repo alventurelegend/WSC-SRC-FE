@@ -1,0 +1,225 @@
+/* General Body and Container Styling */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#00d9ff, #008299);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px; /* Padding for smaller screens */
+  box-sizing: border-box;
+}
+
+/* Login Card Styling */
+.login-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Max width for desktop */
+  overflow: hidden; /* Ensures border-radius applies to header */
+  text-align: center;
+}
+
+/* Login Header Styling */
+.login-header {
+  background-color: #00568b; /* Dark blue */
+  color: #ffffff;
+  padding: 25px 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 1.5em; /* Adjust as needed */
+}
+
+/* Login Form Styling */
+.login-form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between input groups */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Slightly off-white background for input fields */
+}
+
+.input-group i {
+  color: #888;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex-grow: 1; /* Allows input to take up remaining space */
+  padding: 5px 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+/* Login Button Styling */
+.login-button {
+  background-color: #2196f3; /* Bright blue */
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width within the form padding */
+}
+
+.login-button:hover {
+  background-color: #1976d2; /* Slightly darker blue on hover */
+}
+
+.regist-button {
+  background-color: #2196f3; /* Bright blue */
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width within the form padding */
+}
+
+.regist-button:hover {
+  background-color: #1976d2; /* Slightly darker blue on hover */
+}
+
+/* Register Link Styling */
+.register-link {
+  padding: 0 30px 30px; /* Top padding is 0 to align better, same horizontal padding as form */
+  font-size: 0.95em;
+  color: #555;
+}
+
+.register-link a {
+  color: #2196f3; /* Bright blue for link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+  color: #1976d2; /* Slightly darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Tablet and smaller desktops */
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 400px; /* Slightly smaller for tablets */
+  }
+
+  .login-header h2 {
+    font-size: 1.4em;
+  }
+
+  .login-form {
+    padding: 25px;
+    gap: 15px;
+  }
+
+  .input-group {
+    padding: 8px;
+  }
+
+  .input-group i {
+    font-size: 1.1em;
+  }
+
+  .login-button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .register-link {
+    padding: 0 25px 25px;
+    font-size: 0.9em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 15px; /* Add some padding to the body for very small screens */
+  }
+
+  .container {
+    padding: 0; /* Remove container padding as body handles it */
+  }
+
+  .login-card {
+    margin: 0 15px; /* Add margin to the card itself */
+    border-radius: 5px; /* Slightly less rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-header {
+    padding: 20px 15px;
+    font-size: 1.3em;
+    border-top-left-radius: 5px; /* Match card border-radius */
+    border-top-right-radius: 5px; /* Match card border-radius */
+  }
+
+  .login-header h2 {
+    font-size: 1.3em;
+  }
+
+  .login-form {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .input-group {
+    padding: 7px;
+  }
+
+  .input-group i {
+    font-size: 1em;
+    margin-right: 8px;
+  }
+
+  .input-group input {
+    font-size: 0.95em;
+  }
+
+  .login-button {
+    padding: 10px;
+    font-size: 0.95em;
+  }
+
+  .register-link {
+    padding: 0 20px 20px;
+    font-size: 0.85em;
+  }
+}
